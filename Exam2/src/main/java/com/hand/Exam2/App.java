@@ -7,8 +7,9 @@ public class App
     public static void main( String[] args )
     {
     	System.out.print("请输入工资：");    	
-    	Scanner c1=new Scanner(System.in);
+    	Scanner c1=new Scanner(System.in);   	
     	double sal=c1.nextDouble();
+    	c1.close();
     	double m=sal-3500;
     	double s=0;
     	if(m<0){
@@ -20,7 +21,7 @@ public class App
     		s=m*0.1+1500*0.03;
     		
     	}else if((4500<m)&&(m<=9000)){
-    		s=(m-4500)*0.2+(m-4500-1500)*0.1+1500*0.1;   		
+    		s=(m-4500)*0.2+(m-4500-1500)*0.1+1500*0.3;   		
     	}else if((9000<m)&&(m<=35000)){
     		s=(m-9000)*0.25+(m-9000-4500)*0.2+(m-9000-4500-1500)*0.1+1500*0.03;
     		
